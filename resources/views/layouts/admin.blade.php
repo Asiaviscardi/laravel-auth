@@ -15,7 +15,10 @@
 
     @include('admin.partials.header')
 
-    @yield('content')
+    <div class="main-wrapper d-flex">
+        @include('admin.partials.sidebar')
+        @yield('content')
+    </div>
 
 </body>
 </html>
