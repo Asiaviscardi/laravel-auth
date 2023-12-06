@@ -1,8 +1,26 @@
 <aside class="bg-dark">
     <nav>
         <ul>
-            <li class="mb-3"><a href="{{route('admin.home')}}"><i class="fa-solid fa-chart-line"></i>Dashboard</a></li>
-            <li><a href="#"><i class="fa-regular fa-rectangle-list"></i>Lista post</a></li>
+            <li><a href="{{ route('admin.home') }}"
+                    class="{{ Route::currentRouteName() === 'admin.home' ? 'active' : '' }}">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+            </li>
+            <li><a href="{{ route('admin.projects.index') }}"
+                    class="{{ Route::currentRouteName() === 'admin.projects.index' ? 'active' : '' }}">
+                    <i class="fa-solid fa-folder"></i> Projects
+                </a>
+            </li>
+            <li><a href="{{ route('admin.projects.create') }}"
+                    class="{{ Route::currentRouteName() === 'admin.projects.create' ? 'active' : '' }}">
+                    <i class="fa-solid fa-folder-plus"></i> New Project
+                </a>
+            </li>
+            <li><a href="{{ route('admin.technology.index') }}"
+                    class="{{ Route::currentRouteName() === 'admin.technology.index' ? 'active' : '' }}">
+                    <i class="fa-solid fa-code"></i> Tecnologies
+                </a>
+            </li>
         </ul>
     </nav>
 </aside>

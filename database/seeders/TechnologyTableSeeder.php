@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Technology;
 use Illuminate\Support\Str;
 
-class TechnologiesSeeder extends Seeder
+class TechnologyTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
